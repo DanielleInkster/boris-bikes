@@ -1,3 +1,5 @@
+require './lib/bike.rb' 
+
 class DockingStation
 def initialize
 end
