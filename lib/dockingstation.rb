@@ -1,17 +1,14 @@
 require './lib/bike.rb'
 class DockingStation
     attr_reader :bike
-def initialize
-end
 
+  def release_bike
+    fail 'No bikes available' unless @bike
+    @bike
+  end
 
-def release_bike
-  puts 'release_bike'
-  Bike.new
-end
-
-def dock(bike)
-  puts "bike docked"
-  @bike = bike
-end
+  def dock(bike)
+   fail 'Docking station full' if @bike
+   @bike = bike
+  end
 end

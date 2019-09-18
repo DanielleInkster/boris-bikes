@@ -1,8 +1,6 @@
 class Bike
-  def initialize
-  end
 
   def working?
-    puts 'yes'
+    true
   end
 end 
