@@ -1,6 +1,5 @@
 require 'dockingstation'
 require 'bike'
-DEFAULT_CAPACITY = 20
 
 describe DockingStation do
 
