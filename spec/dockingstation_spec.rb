@@ -16,6 +16,7 @@ describe DockingStation do
     end
   end
 
+<<<<<<< HEAD
   describe '#dock' do
     it 'returns docked bikes' do
      bike = Bike.new
@@ -27,6 +28,11 @@ describe DockingStation do
     DEFAULT_CAPACITY.times { subject.dock Bike.new }
     expect { subject.dock Bike.new }.to raise_error('Docking station full')
     end
+=======
+ it 'raises an error for full capacity' do
+  DEFAULT_CAPACITY.times { subject.dock Bike.new }
+  expect { subject.dock Bike.new }.to raise_error('Docking station full')
+>>>>>>> e24e9605083554993667cbaf390d3aded613b6c1
   end
 
    describe '#release_bike' do
